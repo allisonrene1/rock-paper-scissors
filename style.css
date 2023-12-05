@@ -1,0 +1,89 @@
+body {
+  background: linear-gradient(to left, #9ff5e7 40%, #73c7b9 80%);
+  font-family: "Share Tech Mono", monospace;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  font-size: 2rem;
+  color: black;
+  font-weight: 600;
+}
+/* The entire game, including all containers and children */
+.gameBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100vh;
+  position: relative;
+}
+.theGame {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  max-width: 100%;
+  margin: 1rem 0 0 3rem;
+}
+
+/* The rock, paper, scissors, play again buttons */
+.gameOptions {
+  display: flex;
+  gap: 2rem;
+}
+.rock,
+.paper,
+.scissors,
+.reset {
+  font-family: "Share Tech Mono", monospace;
+  border-radius: 3px;
+  font-size: 1.2rem;
+  padding: 8px 14px;
+  -moz-box-shadow: inset 0 1px 0 0 #04614b;
+  -webkit-box-shadow: inset 0 1px 0 0 #015c47;
+  box-shadow: inset 0 1px 0 0 #04614b;
+  background: #015c47;
+  color: white;
+  text-shadow: 0 1px 0 #004a39;
+  outline: black;
+}
+.rock:hover,
+.paper:hover,
+.scissors:hover,
+.reset:hover {
+  background: #054032;
+}
+
+.rock:active,
+.paper:active,
+.scissors:active,
+.reset:active {
+  background: black;
+  border-color: black;
+}
+
+/*All of the information pertaining to tracking the scores of the game */
+.scoreInfo {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  max-width: 45%;
+  margin: 1rem 3rem 0 0;
+  line-height: 1em;
+}
+
+/* Changing CSS styles when manipulated by JavaScript */
+
+.updateRow,
+.updateRowTwo,
+.updateRowThree {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.playerUpdate,
+.playerScoreUpdate,
+.computerUpdate,
+.computerScoreUpdate,
+.resultUpdate {
+  color: #cc0c0c;
+  text-shadow: none;
+}
